@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset = UTF-8>
+        <link rel="stylesheet" href="FormValidation.css">
+    </head>
+    <body>
+        
+        <header>
+            <div id = "nav" >
+                <div id="SchoolName">Solicode &#60\&#62</div>
+                <div id="SchoolDomain">Programming school</div>
+            </div>
+            
+        </header>
+
+        <div id="Form">
+            <form name="formulaire" id="container">
+                <input type="text" name="FamilyName" placeholder="Last name" id="infoFamilyname" onkeyup="CheckFamilyName()">
+                <p id="familynameErrorMessage"></p>
+                <input type="text" name="Name" placeholder="Name" id="infoName" onkeyup="CheckName()">
+                <p id = "nameErrorMessage"></p>
+                <input type="text" name="Email" placeholder="E-mail" id="infoEmail" onkeyup="CheckEmail()">
+                <p id = "emailErrorMessage"></p>
+                <input type="text" name="Téléphone" placeholder="Phone number" id="infoPhonenumber" onkeyup="CheckPhoneNumber()">
+                <p id = "PhoneErrorMessage"></p>
+            </form>
+                
+            <div id="genre">
+                <label for="Masculin">Masculin</label>
+                <input type="radio" value="Masculin" name="Genre" id="masculin">
+                <label for="Féminin">Féminin</label>
+                <input type="radio" value="Féminin" name="Genre" id="feminin">
+                <p id ="ErrorMessage"></p>
+            </div>
+                   
+            <div id="groupe">
+                <label for="DW101">DW 101</label>
+                <input type="radio" value="DW101" name="groupe" id="groupe1">
+                <label for="DW102">DW 102</label>
+                <input type="radio" value="DW102" name="groupe" id="groupe2">
+                <label for="DW103">DW 103</label>
+                <input type="radio" value="DW103" name="groupe" id="groupe3">
+                <label for="DM101">DM 101</label>
+                <input type="radio" value="DM101" name="groupe" id="groupe4">
+                <label for="DM102">DM 102</label>
+                <input type="radio" value="DM102" name="groupe" id="groupe5">
+                <p id="GroupErrorMessage"></p>
+            </div>
+                
+                <label for="Groupes">Choisissez un groupe:</label>
+                <select name="Groupes" id="Liste" multiple>
+                    <option value="Informatique">Informatique</option>
+                    <option value="Robotique">Robotique</option>
+                    <option value="Jeu d'echecs">Jeu d'echecs</option>
+                    <option value="Théatre">Théatre</option>
+                    <option value="Musique">Musique</option>
+                    <option value="Foot">Foot</option>
+                </select>
+                <p id = "resultatclubselection"></p>
+                <input type= "submit" value ="Submit" id="submit">
+            </form>
+        </div>
+
+        <script src="main(inline-validation).js"></script>
+    </body>
+    </html>
