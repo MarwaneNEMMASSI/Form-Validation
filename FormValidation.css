@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin : 0;
+    padding : 0;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+body
+{
+    background-image: linear-gradient(rgb(77, 77, 250), #827efc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#SchoolName
+{
+    padding-left: 2vh;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #ff7b00);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 4vh;
+    font-family: 'Poppins';
+}
+#SchoolDomain
+{
+    padding-right: 2vh;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #ff7b00);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 4vh;
+    font-family: 'Poppins';
+}
+#Form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5%;
+    margin-bottom: 5vh;
+    padding-top: 10vh;
+    margin-top: 15vh;
+}
+#FirstForm
+{
+    margin-top: 10vh;
+}
+#info
+{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 35vh;
+    height: 5vh;
+}
+form
+{
+    padding-top: 3vh;
+    width: 80%;
+}
+#groupe
+{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#genre
+{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#infoFamilyname
+{
+
+    height: 5vh;
+    
+}
+#infoName
+{
+    height: 5vh;
+    margin-top: 3vh;
+
+}
+#infoEmail
+{
+    height: 5vh;
+    margin-top: 3vh;
+}
+#infoPhonenumber
+{
+    height: 5vh;
+    margin-top: 3vh;
+
+}
+#GroupErrorMessage
+{
+    text-align: center;
+}
+#ErrorMessage
+{
+    text-align: center;
+}
+#submit
+{
+    background: none;
+    width: 20%;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+input:focus
+{
+    outline: none;
+}
+.valid
+{
+    color: darkgreen;
+    border-color: darkgreen;
+}
+.invalid
+{
+    color: indianred;
+    border-color: indianred;
+}
+select
+{
+    overflow: hidden;
+    width: 50%;
+    height: 16vh;
+    margin-top: 1vh;
+}
+p
+{
+    color: indianred;
+    font-family: 'poppins';
+    font-size: x-small;
+}
+label
+{
+    font-family: 'poppins';
+}
